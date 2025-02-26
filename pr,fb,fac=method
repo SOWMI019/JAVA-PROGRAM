@@ -1,0 +1,46 @@
+public class Main{
+    public void calculate(){
+        int n=5;
+        int result=1;
+        for(int i=1;i<=n;i++)
+        {
+            result*=i;
+        }
+            System.out.println(result);
+    }
+       public void calculate(int num){
+        if(num <=1){
+            System.out.println(num + "number is not a prime");
+        }
+        else{
+            for(int i=2;i< num;i++){
+                if(num % i == 0){
+                    System.out.println(num + " number is not a prime");
+               }
+            }
+             System.out.println(num + "number is a prime");
+        }
+    }
+    public void calculate(int a,int b)
+    {
+        int n=10;
+        for(int i=0;i<=n;i++){
+            int c=a+b;
+            a=b;
+            b=c;
+            System.out.println(c);
+        }
+        }
+        
+    
+    
+public static void main(String [] args){
+  Main sow=new Main();
+  sow.calculate();
+  sow.calculate(5);
+  sow.calculate(0,1);
+
+}
+
+
+}
