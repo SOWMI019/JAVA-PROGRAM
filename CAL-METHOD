@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class calculator{
+    public int a,b,c;
+    Scanner sc=new Scanner(System.in);
+    
+    public void add(){
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextInt();
+        b=sc.nextInt();
+        c=a+b;
+        System.out.println("The sum is "+c);
+        
+    }
+    public int sub(){
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        return(a-b);
+        
+    }
+    public void prod(int a,int b){
+       a=sc.nextInt();
+       b=sc.nextInt();
+       c=a*b;
+       System.out.println("The product is "+c);
+        
+       
+    }
+    public int div(int a,int b){
+       a=sc.nextInt();
+       b=sc.nextInt();
+       return(a/b);
+       
+    }
+}
+class Main{
+    public static void main(String[]args){
+        calculator cal=new calculator();
+        cal.add();
+        System.out.println("The diff is "+cal.sub());
+        cal.prod(4,5);
+        System.out.println("The quotient is "+cal.div(10,5));
+    }
+}
