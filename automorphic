@@ -1,0 +1,26 @@
+class Main {
+    public static void main(String[] args) {
+        int num=100;
+        for(int i=1;i<=100;i++)
+        {
+           int  sqr=i*i;
+            int ans=i;
+            boolean isautomorphic=true;
+            while(ans>0)
+            {
+                if(ans%10!=sqr%10)
+                {  
+                    isautomorphic=false;
+                    break;
+                    
+                }
+                ans/=10;
+                sqr/=10;
+            }
+                if(isautomorphic)
+                {
+        System.out.println("automorphic" + i);
+                }
+            }
+    }
+}
