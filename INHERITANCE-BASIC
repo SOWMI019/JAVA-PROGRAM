@@ -1,0 +1,23 @@
+class Tree
+{
+    public String name="Mango tree";
+    public void display()
+    {
+        
+    }
+}
+class plant extends Tree{
+    String plant="bringal";
+    public void show(){
+    
+}
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    plant p   =new plant();
+             System.out.println(p.name);
+                 System.out.println(p.plant);
+}
+}
