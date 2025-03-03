@@ -1,0 +1,74 @@
+class Shape
+{
+    public void Area(){
+    }
+}
+class Rectangle extends Shape
+{
+   int length;
+   int breadth;
+    
+public Rectangle(int length ,int breadth)
+{
+    this.length=length;
+    this.breadth=breadth;
+    int result=length*breadth;
+    System.out.print(result);
+}
+}
+class Square extends Shape 
+{
+    int a;
+    public Square(int a)
+    {
+        this.a=a;
+        int res =a*a;
+        System.out.print(res);
+    }
+}
+class Triangle extends Shape
+{
+    double height;
+    double breadth;
+    public Triangle(double height,double breadth)
+    {
+        this.height=height;
+        this.breadth=breadth;
+         double rlt=0.5*height*breadth;
+         System.out.println(rlt);
+    }
+}
+class Circle extends Shape
+{
+    int r;
+    final double pi=3.14;
+    public Circle (int r)
+    {
+        this.r=r;
+    }
+    public void Area(){
+        double lea=(pi*r*r);
+        System.out.println(lea);
+    }
+        
+    }
+
+public class Main{
+    public static void main(String[] args)
+    {
+        Rectangle r = new Rectangle(8,5);
+        Square s = new Square(5);
+        Triangle t = new Triangle(4,5);
+        Circle c = new Circle(2);
+        r.Area();
+        s.Area();
+        t.Area();
+        c.Area();
+    }
+}
+
+    
+    
+
+    
+
