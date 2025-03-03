@@ -1,0 +1,31 @@
+class shape
+{
+    public void Area(){
+    }
+}
+class Rectangle extends shape
+{
+   int length;
+   int breadth;
+    
+public Rectangle(int length ,int breadth)
+{
+    this.length=length;
+    this.breadth=breadth;
+    int result=length*breadth;
+    System.out.print(result);
+}
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        Rectangle r = new Rectangle(8,5);
+        r.Area();
+    }
+}
+
+    
+    
+
+    
+
