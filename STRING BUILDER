@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        String s = "Refer";  
+
+    
+        String u = s.replaceAll("\\s+", "").toLowerCase();  
+
+        StringBuilder t = new StringBuilder(u);  
+        t.reverse();  
+        
+       System.out.println("Reversed word: " + t);
+
+
+    }
+}   
