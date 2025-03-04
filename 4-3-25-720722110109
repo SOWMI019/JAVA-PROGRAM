@@ -1,0 +1,19 @@
+QN=PRINT A WORD OF LINE
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner=new Scanner(System.in);
+	    System.out.print("ENTER:");
+	    String s=scanner.nextLine();
+	    String[] w=s.trim().split("\\s+");
+	    StringBuilder n=new StringBuilder();
+	    for(int i=w.length-1;i>=0;i--)
+	    {
+	        n.append(w[i]).append(" ");
+	    }
+	    
+		System.out.println(n.toString().trim());
+	}
+}
