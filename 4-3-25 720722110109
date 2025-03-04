@@ -1,0 +1,68 @@
+public class Main{   
+    public static void main(String[] args)    
+    {        
+        String s="t6hj7ui";        
+        String r=" ";        
+        for(int i=0;i<6;i++)        
+        {           
+            r+="t";        
+            
+        }        
+        for(int i=0;i<8;i++)        
+        {            
+            r+="hj";        
+            
+        }        r+="ui";                
+        System.out.println(r);            
+        
+    }
+    
+} 
+**************************************************************************************
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner d=new Scanner(System.in);
+        System.out.print("enter a String:");
+        String input=d.nextLine();
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (ch >= '0' && ch <= '9') {
+                int count = ch - '0';
+                char prevChar = result.charAt(result.length() - 1);
+                while (count > 1) {
+                    result.append(prevChar);
+                    count--;
+                }
+            } else {
+                result.append(ch);
+            }
+        }
+
+        System.out.println(result);
+    }
+}
+*************************************************
+import java.util.Scanner;
+public class Main{	
+    public static void main(String[] args)
+    {	    
+        Scanner scanner=new Scanner(System.in);	    
+        System.out.print("ENTER:");	   
+        String s=scanner.nextLine();	   
+        String[] w=s.trim().split("\\s+");	   
+        StringBuilder n=new StringBuilder();	    
+        for(int i=w.length-1;i>=0;i--)	    
+        {	        
+            n.append(w[i]).append(" ");	    
+            
+        }	    	
+        System.out.println(n.toString().trim());	
+        
+    }
+    
+}
+
