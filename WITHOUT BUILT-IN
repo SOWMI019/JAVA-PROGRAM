@@ -1,0 +1,20 @@
+public class Main{
+    public static void main(String[] args)
+    {
+        String s="t6hj7ui";
+        String r=" ";
+        for(int i=0;i<6;i++)
+        {
+            r+="t";
+        }
+        for(int i=0;i<8;i++)
+        {
+            r+="hj";
+        }
+        r+="ui";
+        
+        System.out.println(r);
+        
+    }
+} 
+
