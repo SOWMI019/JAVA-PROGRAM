@@ -1,0 +1,53 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int row=scanner.nextInt();
+        int col=scanner.nextInt();
+        int[][] a=new int[row][col];
+        int k=1;
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<col;j++)
+            {
+              a[i][j]=k;
+              k++;
+            }
+        }
+                int[][] rotated = new int[col][row]; 
+        
+        
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                rotated[j][row - 1 - i] = a[i][j];
+            }
+        }
+        
+        
+    
+        for (int i = 0; i < col; i++) {
+            for (int j = 0; j < row; j++) {
+                System.out.print(rotated[i][j] + " ");
+            }
+            System.out.println();
+        }
+                int[][] counterRotated = new int[row][col]; 
+            for (int i = 0; i < col; i++) {
+            for (int j = 0; j < row; j++) {
+                counterRotated[row - 1 - j][i] = rotated[i][j];
+            }
+
+            }
+        
+
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print(counterRotated[i][j] + " ");
+            }
+            System.out.println();
+        }
+    
+
+    }
+}
