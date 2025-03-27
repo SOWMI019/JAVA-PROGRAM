@@ -1,0 +1,24 @@
+import java.util.*;
+class Main{
+public static void main(String [] args)
+{
+     Scanner scanner=new Scanner(System.in);
+     int n=scanner.nextIntja();
+     int m=n;
+     int sum=0;
+while(n>0){
+     int num=n%10;
+      sum+=num;
+      n/=10;
+}
+if(m%sum==0)
+{
+System.out.println(m+"Number is harshad");
+}
+else
+{
+System.out.println(m+"Number is not harshad");
+}
+}
+}
+
