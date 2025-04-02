@@ -1,0 +1,22 @@
+class Main {
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();  
+
+        int fact = 1;  
+
+        
+        for (int i = 2; i <= N; i++) {
+           
+            int result = 0;
+            for (int j = 0; j < fact; j++) {
+                result += i;  
+            }
+
+            fact = result; 
+        }
+
+       
+        System.out.println(fact);
+    }
+}
