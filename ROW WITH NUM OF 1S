@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+        int[][] matrix = new int[n][m];
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = scanner.nextInt();
+            }
+        }
+        
+        int maxCount = 0;
+        int resultRow = 0;
+        
+        for (int i = 0; i < n; i++) {
+            int Count = 0;
+            for (int j = 0; j < m; j++) {
+                if (matrix[i][j] == 1) {
+                    Count++;
+                }
+            }
+            if (Count > maxCount) {
+                maxCount = currentCount;
+                resultRow = i;
+            }
+        }
+        
+        if (maxCount == 0) {
+            System.out.println(-1);  
+        } else {
+            System.out.println(resultRow); 
+        }
+    }
+}
