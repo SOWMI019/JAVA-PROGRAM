@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int intInterior = sc.nextInt();  
+        int intExterior = sc.nextInt();   
+        double totalInteriorArea = 0.0;
+        double totalExteriorArea = 0.0;
+         for (int i = 0; i < intInterior; i++) {
+            totalInteriorArea += sc.nextDouble(); 
+        }
+       for (int i = 0; i < intExterior; i++) {
+            totalExteriorArea += sc.nextDouble();  
+        }
+
+        
+        double interiorCost = totalInteriorArea * 18;  
+        double exteriorCost = totalExteriorArea * 12;  
+        double totalCost = interiorCost + exteriorCost;
+
+    
+        System.out.printf("Total estimated Cost : %.1f INR", totalCost);
+
+        sc.close();
+    }
+}
