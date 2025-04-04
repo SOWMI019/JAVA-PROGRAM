@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main{
+public static void main(String [] args){
+Scanner scanner=new Scanner(System.in);
+String s=scanner.nextLine();
+int star=0,hash=0;
+for(int i=0;i<s.length();i++)
+{
+if(s.charAt(i)=='*')
+{
+star++;
+}
+else if(s.charAt(i)=='#')
+{
+hash++;
+}
+}
+if(star>hash)
+{
+System.out.println(star-hash);
+}
+else if(hash>star)
+{
+System.out.println(-(hash-star));
+}
+else
+{
+System.out.println(0);
+}
+}
+}
