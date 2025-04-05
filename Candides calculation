@@ -1,0 +1,23 @@
+import java.util.*;
+class Main{
+public static void main(String[] args){
+Scanner scanner=new Scanner(System.in);
+int c=scanner.nextInt();
+int m=scanner.nextInt();
+int n=scanner.nextInt();
+if(n<=0 || n>c)
+{
+System.out.println("Invalid input");
+}
+else
+{
+  c=c-n;
+System.out.println("candides sold:" +n);
+System.out.println("candides left:" +c);
+if(c<=m)
+{
+c=10;
+System.out.println("candides refilled.candides avilable:" +c);
+}
+}
+}}
