@@ -1,0 +1,27 @@
+import java.util.*;
+class Main{
+public static void main(String[] args)
+{
+Scanner scanner=new Scanner(System.in);
+int weight=scanner.nextInt();
+if(weight==0)
+{
+System.out.println("No minute");
+}
+else if(weight>0 && weight<=2000)
+{
+System.out.println("Estimed time:25min");
+}
+else if(weight>2000 && weight<=4000)
+{
+System.out.println("Estimed time:35min");
+}
+else if(weight>4000)
+{
+System.out.println("Estimed time:45min");
+}
+else{
+System.out.println("INVALID INPUT");
+}
+}
+}
