@@ -1,0 +1,23 @@
+import java.util.*;
+class Main{
+public static void main(String [] args)
+{
+Scanner scanner=new Scanner(System.in);
+int n=scanner.nextInt();
+int m1=scanner.nextInt();
+int m2=scanner.nextInt();
+for(int i=1;i<=n;i++)
+{
+ if(i%2==0 && i%5==0)
+{ System.out.println(" Happycoding");
+}
+else if(i%2==0)
+{ System.out.println("happy");
+}
+else if(i%5==0)
+{ System.out.println("coding");
+}
+else{
+System.out.println(i);
+}}
+}}
