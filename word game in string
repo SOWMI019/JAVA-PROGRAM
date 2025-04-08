@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+         String[] s ={"cap","pen","red"};
+          if (s.length > 0) {
+            System.out.println(s[0] +" "); 
+            String prev = s[0];
+
+            for (int i = 0; i < s.length; i++) {
+                String current = s[i];
+                char first = current.charAt(0);
+                char last = prev.charAt(prev.length() - 1);
+
+                if (first == last) {
+                    System.out.println(current);
+                    prev = current;
+                }
+            }
+        }
+    }
+}
