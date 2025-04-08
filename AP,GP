@@ -1,0 +1,32 @@
+import java.util.*;
+class Main{
+public static void main(String [] args)                         
+{
+Scanner scanner=new Scanner(System.in);
+String s=scanner.nextLine();
+String[] p=s.split(" ");
+int n=p.length;
+int[] a=new int[n];
+for(int i=0;i<p.length;i++)
+{
+a[i]=Integer.parseInt(p[i]);
+}
+boolean isAP=a[1]-a[0]==a[2]-a[1];
+boolean isGP=a[1]/a[0]==a[2]/a[1];
+if(isAP)
+{
+int r=a[1]-a[0];
+int res=a[n-1]+r;
+System.out.println(res);
+}
+else if(isGP)
+{
+int r=a[1]/a[0];
+int res=a[n-1]*r;
+System.out.println(res);
+}
+else{
+System.out.println("neither ap nor gp");
+}
+}}
+
