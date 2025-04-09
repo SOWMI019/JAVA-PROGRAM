@@ -1,0 +1,52 @@
+import java.util.*;
+class Main{
+public static void main(String[] args)
+{
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter the no.of ticket:");
+int n=scanner.nextInt();
+scanner.nextLine();
+
+System.out.println("Do you want refreshment(yes or no):");
+String r=scanner.nextLine();
+
+System.out.println("Do you have a coupon code(yes or no):");
+String c=scanner.nextLine();
+
+System.out.println("Enter the circle(k or q):");
+char ch = scanner.next().charAt(0);
+double ans=0;
+if(ch=='k')
+{ 
+   int cost=75;
+    ans=n*75; 
+}
+else if(ch=='q')
+{
+   int cost=150;
+    ans=n*150;
+}
+else 
+{
+  System.out.println("Invalid circle entered.");
+  return;
+}
+if(n>20)
+{
+double discount=ans*0.10;
+  ans-=discount;
+}
+if(c.equals("yes"))
+{
+    double result=ans*0.02;
+       ans-=result;
+}
+if(r.equals("yes"))
+{
+    ans+=n*50;
+}
+System.out.println(ans);
+}}
+
+    
+  
