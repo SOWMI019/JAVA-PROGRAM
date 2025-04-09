@@ -1,0 +1,29 @@
+import java.util.*;
+class Main{
+public static void main(String[] args)
+{
+Scanner scanner=new Scanner(System.in);
+int first=scanner.nextInt();
+int n=scanner.nextInt();
+
+if(n<1)
+{
+System.out.println("Invalid input");
+}
+for(int i=first;i<=n;i++)
+{
+int j=2;
+while(j<=i)
+{
+if(i%j==0)
+{
+break;
+}
+j++;
+}
+if(i==j)
+{
+System.out.println(i);
+}
+}
+}}
