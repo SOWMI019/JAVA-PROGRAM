@@ -1,0 +1,17 @@
+import java.util.*;
+class Main{
+public static void main(String [] args)
+{
+Scanner scanner=new Scanner(System.in);
+int Second=scanner.nextInt();
+int[] a=new int[Second];
+for(int i=0;i<Second;i++)
+{
+  a[i]=scanner.nextInt();
+}
+Arrays.sort(a);
+for(int num:a){
+System.out.println(num);
+}
+
+}}
