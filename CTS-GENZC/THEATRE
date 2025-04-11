@@ -1,0 +1,16 @@
+import java.util.*;
+class Main{
+public static void main(String [] args)
+{
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter the no of pizzas bought:");
+int pizzas=scanner.nextInt();
+System.out.println("Enter the no of puffs bought:");
+int puffs=scanner.nextInt();
+System.out.println("Enter the no of cool drinks bought:");
+int cooldrinks=scanner.nextInt();
+int Totalprice=0;
+Totalprice=pizzas*100+puffs*20+cooldrinks*10;
+System.out.println(Totalprice);
+System.out.println("ENJOY THE SHOW!!!");
+}}
