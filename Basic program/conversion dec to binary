@@ -1,0 +1,15 @@
+import java.util.*;
+class Main{
+public static void main(String[] args)
+{
+ Scanner scanner=new Scanner(System.in);
+  int decimal=scanner.nextInt();
+  String Binary=" ";
+  while(decimal>0)
+  {
+    int rem=decimal%2;
+     Binary=rem+Binary;
+     decimal=decimal/2;
+}
+System.out.println(Binary);
+}}
