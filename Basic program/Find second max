@@ -1,0 +1,26 @@
+import java.util.*;
+class Main{
+public static void main(String [] args)
+{
+Scanner scanner=new Scanner(System.in);
+int Second=scanner.nextInt();
+int[] a=new int[Second];
+for(int i=0;i<Second;i++)
+{
+  a[i]=scanner.nextInt();
+}
+
+int max=1,smax=0;
+for(int i=0;i<Second;i++)
+{
+if(a[i]>max)
+{
+smax=max;
+max=a[i];
+}
+}
+
+System.out.println(smax);
+
+
+}}
