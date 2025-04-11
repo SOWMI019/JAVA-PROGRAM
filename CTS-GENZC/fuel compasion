@@ -1,0 +1,26 @@
+import java.util.*;
+class Main{
+public static void main(String [] args)
+{
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter the no of liters to fill the tank:");
+int liters=scanner.nextInt();
+System.out.println("Enter the distance covered:");
+int distance=scanner.nextInt();
+
+if(liters<0)
+{
+System.out.println(liters+ "is an Invalid Input");
+}
+else if(distance<0)
+{
+System.out.println(distance+ "is an Invalid Input");
+}
+double price=((double)liters/distance)*100;
+System.out.printf("%.2f\n",price);
+double cost=distance*0.6214;
+double amount=liters*0.2642;
+double Miles=cost/amount;
+System.out.printf("%.2f\n",Miles);
+}}
+
