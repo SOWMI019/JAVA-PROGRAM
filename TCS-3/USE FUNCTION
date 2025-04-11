@@ -1,0 +1,68 @@
+
+import java.util.*;
+class Main{
+public static void main(String [] args)
+{
+Scanner scanner=new Scanner(System.in);
+int n=scanner.nextInt();
+prime(n);
+
+}
+
+public static void prime(int n){
+if(n<0)
+{
+System.out.println("please enter the positive number");
+}
+int count=0;
+for(int i=2;i<=n;i++)
+{
+ if(n%i==0)
+{
+ count++;
+}}
+if(count>2)
+{
+System.out.println("Not a Prime");
+}else
+{
+System.out.println("Prime");
+}
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
