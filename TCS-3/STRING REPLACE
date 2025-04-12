@@ -1,1 +1,35 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        scanner.nextLine();
+
+        String[] S = new String[n];
+        System.out.println("Enter string:");
+        for (int i = 0; i < n; i++) {
+            S[i] = scanner.nextLine().toLowerCase();
+        }
+
+        String first = "";
+        String second = "";
+        String third = "";
+
+        if (n >= 1) {
+            first = S[0].replaceAll("[aeiou]", "%");
+        }
+
+        if (n >= 2) {
+            second = S[1].replaceAll("[^aeiou]", "#");
+        }
+
+        if (n >= 3) {
+            third = S[2].toUpperCase();
+        }
+
+        String result = first + second + third;
+        System.out.println(result);
+    }
+}
 
