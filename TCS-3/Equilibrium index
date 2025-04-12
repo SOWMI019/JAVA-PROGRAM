@@ -1,0 +1,27 @@
+import java.util.*;
+class Main{
+public static void main(String[] args)
+{
+Scanner scanner=new Scanner(System.in);
+int n=scanner.nextInt();
+int[] a=new int[n]
+for(int i=0;i<n;i++)
+{
+a[i]=scanner.nextInt();
+}
+int lsum=0,int rsum=0;
+for(int i=0;i<n;i++)
+{
+  rsum=rsum=a[j];
+}
+for(int j=0;j<n;j++)
+{
+ rsum=rsum-a[j];
+if(lsum==rsum)
+{
+return j+i;
+}
+lsum=lsum+a[j];
+}
+return -1;
+}}
