@@ -1,0 +1,33 @@
+import java.util.*;
+class Main{
+public static void main(String [] args)
+{
+Scanner scanner=new Scanner(System.in);
+char ch=scanner.next().charAt(0); 
+int n=scanner.nextInt();
+
+String[] c={"Espresso Coffee","Cappuccino Coffee",
+	"Latte Coffee"};
+String[] t={"Plain Tea","Assam Tea","Ginger Tea","Cardamom Tea","Masala Tea","Lemon Tea","Green Tea","Organic Darjeeling Tea"};
+String[] s={"Hot and Sour Soup","Veg Corn Soup","Tomato Soup","Spicy Tomato Soup"};
+
+String[] b={"Hot Chocolate Drink","Badam Drink","Badam-Pista Drink"};
+System.out.println("Welcome to CCD!");
+if(ch=='c')
+{
+System.out.println("Enjoy your " +c[n-1]+ '!');
+}
+ else if(ch=='t')
+{
+System.out.println("Enjoy your " +t[n-1]+ '!');
+}
+else if(ch=='s')
+{
+System.out.println("Enjoy your " +s[n-1]+ '!');
+}
+else if(ch=='b')
+{
+System.out.println("Enjoy your " +b[n-1]+ '!');
+}
+
+}}
