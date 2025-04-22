@@ -1,0 +1,44 @@
+import java.util.*;
+class Main{
+public static void main(String[] args)
+{
+Scanner scanner=new Scanner(System.in);
+String p=scanner.nextLine();
+int n=scanner.nextInt();
+scanner.nextLine();
+String[] c=new String[n];
+if(n>=1)
+{
+System.out.println("yes");
+
+for(int i=0;i<c.length;i++)
+{
+c[i]=scanner.nextLine();
+}
+}
+else
+{
+System.out.println("no");
+}
+int total=n+1;
+double parent=0;
+double child=0;
+if(n>=1)
+{
+  parent=n*(5000*0.10);
+  child=5000*0.05;
+}
+else if(n<1)
+{
+ parent=5000*0.05;
+}
+System.out.println("Total Members=" +total);
+System.out.println("COMISSION DETAILS");
+System.out.println(p +":"+parent);
+System.out.println(c[0]+":" +child);
+System.out.println(c[1] +":"+child);
+}}
+
+
+
+
