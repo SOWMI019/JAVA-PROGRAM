@@ -1,0 +1,20 @@
+import java.util.*;
+class Main{
+public static void main(String[] args)
+{
+Scanner scanner=new Scanner(System.in);
+int n=scanner.nextInt();
+int k=scanner.nextInt();
+int j=scanner.nextInt();
+int m=scanner.nextInt();
+int p=scanner.nextInt();
+if(n<=0 || k<=0 || j<=0 || m<=0 || p<=0)
+{
+System.out.println("Invalid Input");
+}
+int s=m/k;
+int a=p/j;
+int t=s+a;
+System.out.println(n-t);
+}
+}
