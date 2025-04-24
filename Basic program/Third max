@@ -1,0 +1,35 @@
+
+                            
+import java.util.*;
+class Main{
+public static void main(String[] args)
+{
+Scanner scanner=new Scanner(System.in);
+int n=scanner.nextInt();
+int[] a=new int[n];
+int max=1,secmax=0,thirdmax=0;
+for(int i=0;i<n;i++)
+{
+a[i]=scanner.nextInt();
+}
+for(int i=0;i<n;i++)
+{
+if(a[i]>max)
+{
+thirdmax=secmax;
+secmax=max;
+max=a[i];
+}
+else if(a[i]>secmax && a[i]!=max)
+{
+thirdmax=secmax;
+secmax=a[i];
+}
+else if(a[i]>thirdmax && a[i]!=secmax && a[i]!=max)
+{
+thirdmax=a[i];
+}}
+System.out.println("The First maximun number is:" +max);
+System.out.println("The second maximun number is:" +secmax);
+System.out.println("The Third maximun number is:" +thirdmax);
+}}
