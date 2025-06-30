@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main{
+public static void main (String[] args){
+Scanner scanner=new Scanner(System.in);
+int start=scanner.nextInt();
+int end=scanner.nextInt();
+for(int i=start;i<end;i++)
+{
+ int original=i;
+ int reversed=0;
+ int num=i;
+while(num!=0)
+{
+ int digit=num%10;
+ reversed=reversed*10+digit;
+ num/=10; 
+}
+
+if(original==reversed)
+System.out.println(original + " palindrome");
+}
+else
+{
+System.out.println(original + " Not a palindrome");
+}}
+}} 
+
