@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+public static void main (String[] args){
+Scanner scanner=new Scanner(System.in);
+int n=scanner.nextInt();
+int m=n;
+int arm=0;
+while(n>0)
+{
+int num=n%10;
+arm=arm+(num*num*num);
+n/=10;
+}
+if(m==arm)
+{
+ System.out.println(m + " is a armstrong");
+}
+else{
+ System.out.println(m + " is not a armstrong");
+}
+}}
+
