@@ -1,0 +1,16 @@
+class cat{
+String name;
+void pur(){
+System.out.println("The cat is purring");
+}
+}
+public class Main{
+public static void main(String [] args)
+{
+ cat mycat=new cat();
+ mycat.pur();
+ mycat.name="pinky";
+System.out.println("The name of the cat is:" + mycat.name);
+}
+}
+
