@@ -1,0 +1,25 @@
+/Binary to decimal
+/*import java.util.*;
+class Pratice{
+    static Scanner d=new Scanner(System.in);
+    public static void main(String[] args){
+        int n=d.nextInt();
+        int Binary=1,sum=0;
+        while(n>0){
+            sum+=(n%10)*Binary;
+            n/=10;
+            Binary*=2;}
+        System.out.println("Result:"+sum);}}*/
+//Decimal to binary
+/*import java.util.*;
+class Pratice{
+    static Scanner d=new Scanner(System.in);
+    public static void main(String[] args) {
+        int n = d.nextInt();
+        String ans = " ";
+        while (n > 0) {
+            ans = (n % 2) + ans;
+            n /= 2;
+        }
+        System.out.println("Result:" + ans);
+    }}*/
