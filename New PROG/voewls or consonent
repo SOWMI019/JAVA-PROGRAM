@@ -1,0 +1,27 @@
+import java.util.*;
+class pratice{
+    static Scanner d=new Scanner(System.in);
+    public static void main(String[] args){
+        System.out.print("Enter the Character Here:");
+        char data=d.next().charAt(0);
+        if(data>='A' && data<='Z' || data>='a' && data<='z'){
+            switch (data){
+                case 'A', 'a':
+                        System.out.println(data+ " is a vowel");
+                        break;
+                case 'E', 'e':
+                    System.out.println(data+ " is a vowel");
+                    break;
+                case 'I', 'i':
+                    System.out.println(data+ " is a vowel");
+                    break;
+                case 'O', 'o':
+                    System.out.println(data+ " is a vowel");
+                    break;
+                case 'U', 'u':
+                    System.out.println(data+ " is a vowel");
+                    break;
+                default:
+                    System.out.println(data + " is consonent");}}
+        else
+            System.out.println("Invalid Please enter only alphabet")
