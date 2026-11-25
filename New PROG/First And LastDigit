@@ -1,0 +1,13 @@
+import java.util.*;
+class Pratice{
+    static Scanner d=new Scanner(System.in);
+    public static int firstandlastdigit(int n){
+        int last=n%10;
+        while(n>9){
+            n/=10;}
+        return last+n;}
+    public static void main(String[] args){
+        System.out.print("Enter the value of n:");
+        int n=d.nextInt();
+        System.out.println(firstandlastdigit(n));
+    }}
