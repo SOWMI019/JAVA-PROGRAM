@@ -1,0 +1,27 @@
+import java.util.*;
+class Pratice{
+    static Scanner d=new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.print("Enter a:");
+        int a=d.nextInt();
+        System.out.print("Enter b:");
+        int b=d.nextInt();
+        System.out.print("Enter operator:");
+         char ch=d.next().charAt(0);
+        int result=0;
+        switch (ch) {
+            case '+':
+                result = a + b;
+                break;
+            case '-':
+                result = a - b;
+                break;
+            case '*':
+                result = a * b;
+                break;
+            case '/':
+                result = a / b;
+                break;
+            default:
+                System.out.println("invalid");}
+        System.out.println("RESULT:" +result);}}
