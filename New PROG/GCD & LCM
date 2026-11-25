@@ -1,0 +1,31 @@
+import java.util.*;
+class Pratice{
+    static Scanner d=new Scanner(System.in);
+    public static void main(String[] args){
+        System.out.print("Enter the value of a:");
+        int a=d.nextInt();
+        System.out.print("Enter the value of b:");
+        int b=d.nextInt();
+        int min= a < b? a:b;
+        while(min>=2) {
+            if (a % min == 0 && b % min == 0){
+                System.out.println("The greatest common divisor is:" + min);
+                break;}
+            min--;}}}
+
+//LCM
+import java.util.*;
+class Pratice{
+    static Scanner d=new Scanner(System.in);
+    public static void main(String[] args){
+        System.out.print("Enter the value of a:");
+        int a=d.nextInt();
+        System.out.print("Enter the value of b:");
+        int b=d.nextInt();
+        int max=a<b? a:b;
+        while(true){
+            if(max%a==0 && max%b==0){
+                int lcm=max;
+                System.out.println("The least commom multiper is:" +lcm);
+                break;}
+            max++;}}}
