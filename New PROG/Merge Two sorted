@@ -1,0 +1,30 @@
+import java.util.*;
+class Pattern{
+    static Scanner d=new Scanner(System.in);
+    public static void main(String[] args) {
+        int[] x = {1, 5, 6, 7};
+        int[] y = {2, 3, 4, 15, 16, 28};
+        int left = 0, right = 0, m = 0;
+        int[] res = new int[x.length + y.length];
+        while (left < x.length && right < y.length) {
+            if (x[left] < y[right])
+                res[m++] = x[left++];
+            else
+                res[m++] = y[right++];}
+        while (left < x.length) {
+            res[m++] = x[left++];}
+        while (right < y.length) {
+            res[m++] = y[right++];}
+        System.out.println(Arrays.toString(res));}}
+///
+import java.util.*;
+class  Pattern{
+    public static void main(String[] args){
+        int[] m={1,2,3,4};
+        int[] n={5,6,7,8};
+        int[] res=new int[m.length+n.length];
+        for(int i=0,p=0,r=0;i<res.length;i++){
+                res[i]=m[p++];
+            else
+                res[i]=n[r++];}
+        System.out.println(Arrays.toString(res));}}
