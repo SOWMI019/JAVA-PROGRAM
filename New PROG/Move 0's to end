@@ -1,0 +1,23 @@
+import java.util.*;
+class Pattern{
+    static Scanner d=new Scanner(System.in);
+    public static int[] Move0toend(int[] arr){
+        for(int i=0,j=0;i<arr.length;i++){
+            if(arr[i]!=0){
+                int temp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
+                j++;}}
+    return arr;}
+public static void main(String[] args) {
+    int n = d.nextInt();
+    int[] arr = new int[n];
+    for (int i = 0; i < arr.length; i++) {
+        arr[i] = d.nextInt();
+    }
+    for (int i = 0; i < arr.length; i++) {
+        System.out.print(arr[i] + " ");
+    }
+    System.out.println();
+    System.out.println(Arrays.toString(Move0toend(arr)));
+}}
