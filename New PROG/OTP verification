@@ -1,0 +1,15 @@
+import java.util.*;
+class Pratice{
+    static Scanner d=new Scanner(System.in);
+    public static void main(String[] args) throws Exception{
+        System.out.print("Enter the OTP here:");
+        Thread.sleep(2000);
+        int sys_otp = (int) (Math.random() * 999 + 999);
+        System.out.println(sys_otp);
+        System.out.print("Enter the user OTP here:");
+        int user_otp = d.nextInt();
+        System.out.println(user_otp);
+        if (user_otp == sys_otp)
+            System.out.println("Validation Successful");
+        else
+            System.out.println("Wrong Otp");}} 
