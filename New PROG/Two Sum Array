@@ -1,0 +1,14 @@
+import java.util.*;
+class pattern{
+    public static void main(String[] args){
+        int[] nums={3,1,2,4,7};
+        int tg=9;
+        Arrays.sort(nums);
+        int l=0,r=nums.length-1;
+        while(l<=r) {
+            if (nums[l] + nums[r] == tg) {
+                System.out.println(nums[l] + "," + nums[r]); }
+            if (nums[l] + nums[r] < tg)
+                l++;
+            else
+                r--; }}}
